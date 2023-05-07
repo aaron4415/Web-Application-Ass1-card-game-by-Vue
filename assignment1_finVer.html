@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="game-container">
+      <div class="title-container">
+        <h1 class="title">EE4216 Assignment 1 - JavaScript Card Game</h1>
+      </div>
+
+      <div class="instructions">
+        instructions: Please input a number of multiple of 3, than you can click
+        on three cards to turn them over, if a triple is found, 3 scroe will be
+        added, if a triple is not found, 1 scroe will be deduced, the game will
+        be end when all triples are found. The time will also end when the
+        countDown is 0, the time will be given accroding your input ((30 *
+        number Of Card) / 3)second. Enjoy the Game!
+      </div>
+      <div class="score-container">
+        <p class="score-label">Score:</p>
+        <p class="score-value" id="scoreValue">0</p>
+      </div>
+      <div class="body-container">
+        <div class="time-container">
+          <p class="time-label">Time:</p>
+          <p class="time-value" id="timeValue">0</p>
+        </div>
+        <div class="input-container">
+          <p class="input-label">Number of cards:</p>
+          <input type="text" class="input-value" id="numInput" />
+          <button
+            class="button"
+            type="button"
+            id="SubmitButton"
+            onclick="numberOfcard_click_handler()"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div class="card-container" id="cardContainer">
+        <!-- Add a set of cards dynamically depending on user input -->
+      </div>
+    </div>
+
+    <script type="text/javaScript" src="scripts.js"></script>
+  </body>
+</html>

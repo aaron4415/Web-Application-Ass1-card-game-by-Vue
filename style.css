@@ -1,0 +1,196 @@
+.game-container {
+  height: 100vh;
+
+  background-color: #eee;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  background-image: -webkit-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -webkit-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -moz-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -moz-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -ms-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -ms-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: -o-linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    -o-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black
+          75%, black);
+  background-image: linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    );
+  font-family: Helvetica, sans-serif;
+  color: rgb(211, 211, 211);
+
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  margin-left: 10%;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 36px;
+  line-height: 50px;
+  cursor: pointer;
+
+  background-color: DodgerBlue;
+  margin-top: 5%;
+  padding: 5%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20%;
+  border-width: 15px;
+  transition: transform 0.5s;
+}
+.cardBack {
+  width: 100px;
+  height: 100px;
+  margin-left: 10%;
+  border: 1px solid gray;
+
+  font-size: 0px;
+  line-height: 50px;
+  cursor: pointer;
+
+  background-color: yellow;
+  margin-top: 5%;
+  padding: 5%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20%;
+  border-width: 15px;
+  transform: rotateY(180deg);
+}
+.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.title {
+  text-align: center;
+ 
+
+}
+.title-container {
+  
+  border: 2px solid #222;
+  padding: 10px 100px 10px 100px;
+  border-width: thick;
+  background: linear-gradient(45deg, red, gray);
+}
+.instructions {
+  border: 2px solid #222;
+  padding: 10px 100px 10px 100px;
+  border-width: thick;
+  background: linear-gradient(45deg, #8908fd, #fa14db);
+  font-size: 30px;
+}
+.score-container {
+  text-align: center;
+  font-size: 40px;
+  font-family: CursedTimer;
+  color: #f94f6d;
+  background: black;
+  border: 2px solid rgb(223, 35, 35);
+  padding: 10px 100px 10px 100px;
+  border-width: thick;
+}
+.time-container {
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  border: 2px solid #222;
+  padding: 10px 100px 10px 100px;
+  border-width: thick;
+  background: linear-gradient(45deg, red, #fa14db);
+  font-size: 30px;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.input-container {
+  border: 2px solid #222;
+  padding: 10px 100px 10px 100px;
+  border-width: thick;
+  background: linear-gradient(45deg, gray, black);
+}
+.input-value {
+  display: block;
+  margin: 0;
+  padding: var(--inputPaddingV) var(--inputPaddingH);
+
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.4rem;
+  transition: box-shadow var(--transitionDuration);
+}
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: red;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
