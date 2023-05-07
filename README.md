@@ -25,6 +25,7 @@ languages or libraries are allowed.
 6. The game should run in a web browser and should be accessible to all users, regardless 
 of the device or screen size.
 7. The programs should have proper comments, explaining the code.
+
 Advanced Requirements:
 1. A scoring system that keeps track of the player's progress and displays the current 
 score on the user interface. The player should earn points for each successful match 
